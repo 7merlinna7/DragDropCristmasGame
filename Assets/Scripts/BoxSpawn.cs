@@ -16,6 +16,4 @@ public class BoxSpawn : MonoBehaviour
         int randomBox = Random.Range(0, _BoxPrefabs.Count);
         Instantiate(_BoxPrefabs[randomBox],transform.position,transform.rotation);
     }
-
-
 }

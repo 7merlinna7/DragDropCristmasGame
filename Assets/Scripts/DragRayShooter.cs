@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 
 public class DragRayShooter : IRayShooter
@@ -6,7 +5,6 @@ public class DragRayShooter : IRayShooter
     private Plane plane = new Plane(Vector3.down, 0);
     private bool _isDraged;
     private IDragged _dragged;
-
 
     public void Shoot()
     {

@@ -21,7 +21,6 @@ public class PresentBox :MonoBehaviour, IDragged,IExplosive
 
     public void Explode(Vector3 explotionPosition, float explotionRadius)
     {
-
         _rigidbody.AddExplosionForce(_explotionForce, explotionPosition, explotionRadius,_explodeUpwardsModifier,ForceMode.Impulse);
         
     }

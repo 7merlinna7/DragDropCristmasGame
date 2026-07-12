@@ -153,6 +153,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _explotionForce: 500
   _explodeUpwardsModifier: 0.2
+  _explotionPrefub: {fileID: 0}
 --- !u!54 &2638735760329412978
 Rigidbody:
   m_ObjectHideFlags: 0

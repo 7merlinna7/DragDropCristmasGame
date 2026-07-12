@@ -8,13 +8,15 @@ public class Player : MonoBehaviour
     private const int _rightMouseButton = 1;
 
     [SerializeField] private float _explotionRadius;
+    [SerializeField] private ExplotionEffect _explotionEffect;
+
     private DragRayShooter _dragRayShooter;
     private ExplosionRayShooter _explosionRayShooter;
 
     private void Awake()
     {
         _dragRayShooter = new DragRayShooter();
-        _explosionRayShooter = new ExplosionRayShooter(_explotionRadius);
+        _explosionRayShooter = new ExplosionRayShooter(_explotionRadius,_explotionEffect);
     }
 
     private void Update()
