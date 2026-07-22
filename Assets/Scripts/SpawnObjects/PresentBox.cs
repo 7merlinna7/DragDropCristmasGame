@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PresentBox :MonoBehaviour, IDragged,IExplosive
+public class PresentBox :MonoBehaviour, IDraggable,IExplosive
 {
     private Rigidbody _rigidbody;
     [SerializeField] private float _explotionForce = 1000f;

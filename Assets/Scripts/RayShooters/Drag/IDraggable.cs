@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public interface IDragged 
+public interface IDraggable 
 {
     public void Drag(Vector3 mousePosition);
 }

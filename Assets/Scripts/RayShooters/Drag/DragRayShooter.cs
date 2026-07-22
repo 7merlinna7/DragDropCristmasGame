@@ -4,7 +4,7 @@ public class DragRayShooter : IRayShooter
 {
     private Plane plane = new Plane(Vector3.down, 0);
     private bool _isDraged;
-    private IDragged _dragged;
+    private IDraggable _dragged;
 
     public void Shoot()
     {
@@ -14,7 +14,7 @@ public class DragRayShooter : IRayShooter
         {
             if (Physics.Raycast(ray, out RaycastHit hit))
             {
-                _dragged = hit.collider.GetComponent<IDragged>();
+                _dragged = hit.collider.GetComponent<IDraggable>();
 
                 if (_dragged != null)
                 {
